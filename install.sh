@@ -16,22 +16,20 @@ sudo apt install -y python3-pip python3-venv git
 sudo apt install -y gphoto2 libgphoto2-dev libgphoto2-port12
 sudo apt install -y build-essential pkg-config
 
-# Create project directory
-if [ ! -d "~/Project" ]; then
-    echo "Creating project directory..."
-    mkdir ~/Project
-fi
-cd ~/Project
-
 # Clone project repository
-if [ `pwd` = "$HOME/Project" ]; then 
+if [ `pwd` = "$HOME/Eclipse_Project" ]; then 
     echo "Cloning Eclipse Projects repository..."
     git clone https://github.com/ozuntini/Solar_Eclipse_Photography.git
     git clone https://github.com/ozuntini/Filter_Control.git
     git clone https://github.com/ozuntini/MonHubEclipse.git
 else
     echo "Error: Not in the project directory."
+    exit 1
 fi
+
+# Create directory for logs
+echo "Creating logs directory..."
+mkdir -p ~/Eclipse_Project/logs
 
 # Create virtual environment
 echo "Creating Python virtual environment..."
