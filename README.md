@@ -2,31 +2,24 @@
 
 ## Description
 Ce projet indique comment préparer la Raspberry pour utiliser les projets :
-- Solar
+- Solar_Eclipse_Photography
+- Filter_Control
+- MonHubEclipse
 
 ## Fonctionnalités
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
+- Orchestration de photos d'éclipse
+- Control du filtre
+- Applications Web pour gérer les applications ci-dessus
 
 ## Prérequis
+- Préparer la Raspberry comme indiqué dans la documentation [INSTALLATION.md](./INSTALLATION.md)
 
-## Installation / Import dans Eclipse
+## Installation
 1. Cloner le dépôt :
    ```bash
    git clone https://github.com/ozuntini/Eclipse_Project.git
    cd Eclipse_Project
    ```
-
-## Exécution
-
-## Structure du projet
-
-## Configuration
-
-## Roadmap
-- [ ] Ajouter …
-- [ ] Améliorer …
 
 ## Contribuer
 Les contributions sont les bienvenues :
@@ -37,4 +30,4 @@ Les contributions sont les bienvenues :
 5. Ouvrir une Pull Request
 
 ## Licence
-Indique la licence ici (ex: MIT). Voir le fichier `LICENSE`.
+Indique la licence ici (ex: MIT). Voir le fichier [LICENSE.md](./LICENSE.md).
