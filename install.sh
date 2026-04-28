@@ -13,7 +13,7 @@ sudo apt update && sudo apt upgrade -y
 # Install system dependencies
 echo "Installing system dependencies..."
 sudo apt install -y python3-pip python3-venv git
-sudo apt install -y gphoto2 libgphoto2-dev libgphoto2-port12
+sudo apt install -y gphoto2 libgphoto2-dev libgphoto2-port12t64
 sudo apt install -y build-essential pkg-config tmux
 
 # Clone project repository
