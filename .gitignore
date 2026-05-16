@@ -2,6 +2,8 @@
 log/
 archives/
 fichiers_enregistres/
+logs/
+*_backup_*
 
 # Métadonnées de build et distribution
 *.egg-info/
@@ -22,3 +24,11 @@ filter_control/__pycache__/
 venv/
 .venv/
 ._*
+
+# répertoire télécharhgé sur Github
+FilterControl/
+MonHubEclipse/
+Solar_Eclipse_Photography/
+images/.DS_Store
+captures/
+

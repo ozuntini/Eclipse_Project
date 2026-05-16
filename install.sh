@@ -31,6 +31,10 @@ fi
 echo "Creating logs directory..."
 mkdir -p ~/Eclipse_Project/logs
 
+# Create directory for captures
+echo "Creating captures directory..."
+mkdir -p ~/Eclipse_Project/captures
+
 # Create virtual environment
 echo "Creating Python virtual environment..."
 python3 -m venv ~/eclipse_env
