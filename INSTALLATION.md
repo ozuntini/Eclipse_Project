@@ -38,14 +38,40 @@ Préférer Raspberry Pi OS Lite (64-bit), plus léger et sans interface graphiqu
 ![RaspImager_stockage](images/Raspberry-PI-Imager_12.png)
 
 
-
+## Premiere connexion
 Une fois la Pi démarrée se connecter en ssh.  
-Supprimer la mise en commentaire des ligne ll, la et l dans le .bashrc.
+Pour votre confort supprimer la mise en commentaire des lignes ll, la et l dans le .bashrc.
+
+### Installer GIT
+
+```bash
+sudo apt install git
+```
+
+### Cloner le premier repositorie
+
+```bash
+git clone https://github.com/ozuntini/Eclipse_Project.git
+````
+
+### Lancer l'installation
+```bash
+cd Eclipse_Project/
+./install.sh
+```
+Laisser l'installation progresser.
+
+Une fois l'installation terminée vous devez obtenir les messages suivants.  
+![Fin_install](images/Fin_install.sh.png)
+
+## Première utilisation
 
 
 
 
 
+
+---
 *** Error ***
 An error occurred in the io-library ('Could not claim the USB device'): Could not claim interface 0 (Device or resource busy). Make sure no other program (gvfs-gphoto2-volume-monitor) or kernel module (such as sdc2xx, stv680, spca50x) is using the device and you have read/write access to the device.
 

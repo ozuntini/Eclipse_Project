@@ -19,16 +19,19 @@ et ce projet adhère à [Semantic Versioning](https://semver.org/).
 
 ### Corrigé (Fixed)
 
-
 ### Supprimé (Removed)
 - Description des fonctionnalités supprimées.
 
 ### Déprécié (Deprecated)
-- 
+-
 
 ### Sécurité (Security)
-- 
+-
 
 ---
+
+## 2026/04/28
+- Corrections de l'installeur
+
 ## 2026/04/26
 - Mise à jour du Readme, install.sh et License.md
