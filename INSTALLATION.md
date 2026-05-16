@@ -38,7 +38,7 @@ Préférer Raspberry Pi OS Lite (64-bit), plus léger et sans interface graphiqu
 ![RaspImager_stockage](images/Raspberry-PI-Imager_12.png)
 
 
-## Premiere connexion
+## Première connexion
 Une fois la Pi démarrée se connecter en ssh.  
 Pour votre confort supprimer la mise en commentaire des lignes ll, la et l dans le .bashrc.
 
@@ -48,7 +48,7 @@ Pour votre confort supprimer la mise en commentaire des lignes ll, la et l dans 
 sudo apt install git
 ```
 
-### Cloner le premier repositorie
+### Cloner le premier repository
 
 ```bash
 git clone https://github.com/ozuntini/Eclipse_Project.git
@@ -90,5 +90,4 @@ S1 System Options.
         └── IB1 Consol Text. 
 sudo reboot
 ```
-
 
