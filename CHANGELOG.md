@@ -14,6 +14,7 @@ et ce projet adhère à [Semantic Versioning](https://semver.org/).
 - Création du répertoire captures/ dans le install.sh
 - Ajouts de répertoires de travail dans gitignore
 - Création d'un script pour le 6D pour l'éclipse du 12/08/2026
+- Création d'un script pour le R6 pour l'éclipse du 12/08/2026
 
 ### Modifié (Changed)
 - Formatage du fichier Changelog

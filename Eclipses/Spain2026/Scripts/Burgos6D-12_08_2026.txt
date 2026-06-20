@@ -13,22 +13,22 @@
 Config,19:33:29,20:28:37,20:29:30,20:30:23,21:22:02
 
 # Fermeture du filtre à C1 moins 4 minutes par sécurité
-Filter,C1,-,00:04:00,C
+Filter,C1,-,00:05:00,C
 
 # Cycle d'images sur la phase partielle 1h avant C2 soit 5 minutes avant C1
-Boucle,C2,-,01:00:00,-,00:00:10,5,8,100,1/500,0
+Boucle,C2,-,01:00:00,-,00:00:11,5,8,100,1/500,0
 
 # Ouverture du filtre à C2 moins 9 secondes
-Filter,C2,-,00:00:09,O
+Filter,C2,-,00:00:10,O
 
 # Anneaux de Diamant C2 -5s à +5s
-Boucle,C2,-,00:00:05,+,00:00:05,1,4.5,200,1/250,0
+Boucle,C2,-,00:00:00,+,00:00:07,1,4.5,200,1/250,0
 
 # Autour du Maximum
 # Photo,Max,-,00:00:02,ouverture,iso,vitesse_obturation,delai_mlu
-Photo,Max,-,00:00:50,4.5,800,1/400,0
-Photo,Max,-,00:00:45,4.5,800,1/200,0
-Photo,Max,-,00:00:40,4.5,800,1/100,0
+Photo,Max,-,00:00:45,4.5,800,1/400,0
+Photo,Max,-,00:00:42,4.5,800,1/200,0
+Photo,Max,-,00:00:39,4.5,800,1/100,0
 Photo,Max,-,00:00:35,4.5,800,1/50,0
 Photo,Max,-,00:00:30,4.5,800,1/25,0
 Photo,Max,-,00:00:25,2.8,800,1/200,0
@@ -36,11 +36,11 @@ Photo,Max,-,00:00:20,2.8,800,1/100,0
 Photo,Max,-,00:00:15,2.8,800,1/50,0
 Photo,Max,-,00:00:10,2.8,800,1/25,0
 
-Photo,Max,-,00:00:04,1.6,1000,1/25,0
-Photo,Max,-,00:00:02,1.6,1600,1/25,0
+Photo,Max,-,00:00:06,1.6,1000,1/25,0
+Photo,Max,-,00:00:03,1.6,1600,1/25,0
 Photo,Max,-,00:00:00,1.6,3200,1/25,0
-Photo,Max,+,00:00:02,1.6,1600,1/25,0
-Photo,Max,+,00:00:04,1.6,1000,1/25,0
+Photo,Max,+,00:00:03,1.6,1600,1/25,0
+Photo,Max,+,00:00:06,1.6,1000,1/25,0
 
 Photo,Max,+,00:00:10,2.8,800,1/25,0
 Photo,Max,+,00:00:15,2.8,800,1/50,0
@@ -48,15 +48,15 @@ Photo,Max,+,00:00:20,2.8,800,1/100,0
 Photo,Max,+,00:00:25,2.8,800,1/200,0
 Photo,Max,+,00:00:30,4.5,800,1/25,0
 Photo,Max,+,00:00:35,4.5,800,1/50,0
-Photo,Max,+,00:00:40,4.5,800,1/100,0
-Photo,Max,+,00:00:45,4.5,800,1/200,0
-Photo,Max,+,00:00:50,4.5,800,1/400,0
+Photo,Max,+,00:00:39,4.5,800,1/100,0
+Photo,Max,+,00:00:42,4.5,800,1/200,0
+Photo,Max,+,00:00:45,4.5,800,1/400,0
 
 # Anneaux de Diamant C3 -5s à 0s
-Boucle,C3,-,00:00:06,-,00:00:01,1,4.5,200,1/250,0
+Boucle,C3,-,00:00:07,-,00:00:00,1,4.5,200,1/250,0
 
 # Fermeture du filtre à C3 secondes
-Filter,C3,-,00:00:00,C
+Filter,C3,+,00:00:02,C
 
 # Cycle d'images sur la phase partielle 1h avant C2 soit 5 minutes avant C1
 Boucle,C3,+,00:00:10,+,00:52:00,5,8,100,1/125,0
@@ -69,8 +69,8 @@ Photo,C4,+,00:02:00,4.5,100,1/60,0
 Photo,C4,+,00:02:10,4.5,100,1/30,0
 Photo,C4,+,00:02:20,4.5,100,1/15,0
 Photo,C4,+,00:03:00,4.5,200,1/15,0
-Photo,C4,+,00:02:30,4.5,400,1/15,0
-Photo,C4,+,00:03:00,4.5,800,1/15,0
+Photo,C4,+,00:03:30,4.5,400,1/15,0
+Photo,C4,+,00:04:00,4.5,800,1/15,0
 
 # Notes sur les paramètres:
 # - Ouverture: f-number (ex: 4 = f/4, 5.6 = f/5.6)                      -> verifier avec un gphoto2 --get-config=aperture que les valeurs sont compatibles avec votre boitier

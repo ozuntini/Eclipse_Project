@@ -1,0 +1,119 @@
+# Configuration pour l'éclipse du 12 août 2026
+# Séquence prévue pour le boitier R6 avec 490mm 6.9
+# Site d'observation Castrojeriz Région de Burgos Lat:N 42°16'29" - Lon:O 4°06'57" Altitude 877
+# TU => C1:17:33:29 - C2:18:28:37 - Max:18:29:30 - C3:18:30:23 - C4:19:22:02 (X.Jubier)
+# 
+
+# Actions photographiques
+# Format: Type,reference_temps,operateur,temps,operateur_fin,temps_fin,intervalle_ou_nombre,ouverture,iso,vitesse,mlu
+
+# Ligne de configuration principale
+# Config,C1,C2,Max,C3,C4,test_mode
+# C1 = Premier contact, C2 = Début totalité, Max = Maximum, C3 = Fin totalité, C4 = Dernier contact
+Config,19:33:29,20:28:37,20:29:30,20:30:23,21:22:02
+
+# Fermeture du filtre à C1 moins 4 minutes par sécurité
+Filter,C1,-,00:05:00,C
+
+# Images avant le début de l'éclipse
+# Photo,XX,-,00:00:00,ouverture,iso,vitesse_obturation,delai_mlu
+Photo,C1,-,00:01:00,-,100,1/500,0
+Photo,C1,-,00:00:30,-,100,1/500,0
+
+# ---- Phase Partielle ---- Début
+# Cycle autour de C1
+Boucle,C1,-,00:00:10,+,00:00:10,2,-,100,1/500,0
+
+# Cycle d'images sur la phase partielle 1h avant C2 soit 5 minutes avant C1
+Boucle,C1,+,00:00:30,+,00:54:30,30,-,100,1/500,0
+
+# ---- Phase Totale ---- Début
+# Ouverture du filtre à C2 moins 30 secondes
+Filter,C2,-,00:00:30,O
+
+# Anneaux de Diamant C2 -4s à 0s
+Photo,C2,-,00:00:04,-,100,1/50,0
+Photo,C2,-,00:00:02,-,100,1/50,0
+Photo,C2,-,00:00:00,-,100,1/50,0
+
+# Grains de Baily C2 +2s à +4s
+Photo,C2,+,00:00:02,-,100,1/2500,0
+Photo,C2,+,00:00:04,-,100,1/2500,0
+
+# Protubérances C2 +6s à +10s
+Photo,C2,+,00:00:06,-,100,1/640,0
+Photo,C2,+,00:00:08,-,100,1/500,0
+Photo,C2,+,00:00:10,-,100,1/400,0
+
+# Autour du Maximum de MAx -41s à Max +41s
+# Photo,Max,-,00:00:02,ouverture,iso,vitesse_obturation,delai_mlu
+Photo,Max,-,00:00:40,-,800,1/800,0
+Photo,Max,-,00:00:38,-,800,1/640,0
+Photo,Max,-,00:00:36,-,800,1/500,0
+Photo,Max,-,00:00:34,-,800,1/400,0
+Photo,Max,-,00:00:32,-,800,1/320,0
+Photo,Max,-,00:00:30,-,800,1/250,0
+Photo,Max,-,00:00:28,-,800,1/200,0
+Photo,Max,-,00:00:26,-,800,1/160,0
+Photo,Max,-,00:00:24,-,800,1/125,0
+Photo,Max,-,00:00:22,-,800,1/100,0
+Photo,Max,-,00:00:20,-,800,1/80,0
+Photo,Max,-,00:00:18,-,800,1/60,0
+Photo,Max,-,00:00:16,-,800,1/50,0
+Photo,Max,-,00:00:14,-,800,1/40,0
+Photo,Max,-,00:00:12,-,800,1/30,0
+
+Photo,Max,-,00:00:10,-,1600,1/50,0
+Photo,Max,-,00:00:08,-,1600,1/40,0
+Photo,Max,-,00:00:06,-,3200,1/20,0
+Photo,Max,-,00:00:04,-,3200,1/10,0
+Photo,Max,-,00:00:02,-,3200,1/5,0
+Photo,Max,+,00:00:00,-,3200,0.5,0
+Photo,Max,+,00:00:02,-,3200,1/5,0
+Photo,Max,+,00:00:04,-,3200,1/10,0
+Photo,Max,+,00:00:06,-,3200,1/20,0
+Photo,Max,+,00:00:08,-,1600,1/40,0
+Photo,Max,+,00:00:10,-,1600,1/50,0
+
+Photo,Max,+,00:00:12,-,800,1/30,0
+Photo,Max,+,00:00:14,-,800,1/40,0
+Photo,Max,+,00:00:16,-,800,1/50,0
+Photo,Max,+,00:00:18,-,800,1/60,0
+Photo,Max,+,00:00:20,-,800,1/80,0
+Photo,Max,+,00:00:22,-,800,1/100,0
+Photo,Max,+,00:00:24,-,800,1/125,0
+Photo,Max,+,00:00:26,-,800,1/160,0
+Photo,Max,+,00:00:28,-,800,1/200,0
+Photo,Max,+,00:00:30,-,800,1/250,0
+Photo,Max,+,00:00:32,-,800,1/320,0
+Photo,Max,+,00:00:34,-,800,1/400,0
+Photo,Max,+,00:00:36,-,800,1/500,0
+Photo,Max,+,00:00:38,-,800,1/640,0
+Photo,Max,+,00:00:40,-,800,1/800,0
+
+# Protubérances C3 -10s à -6s
+Photo,C3,-,00:00:10,-,100,1/400,0
+Photo,C3,-,00:00:08,-,100,1/500,0
+Photo,C3,-,00:00:06,-,100,1/640,0
+
+# Grains de Baily C3 -4s à -2s
+Photo,C3,-,00:00:04,-,100,1/2500,0
+Photo,C3,-,00:00:02,-,100,1/2500,0
+
+# Anneaux de Diamant C3 +0s à +4s
+Photo,C3,+,00:00:00,-,100,1/50,0
+Photo,C3,+,00:00:02,-,100,1/50,0
+Photo,C3,+,00:00:04,-,100,1/50,0
+
+# ---- Phase Totale ---- Fin
+# Fermeture du filtre à C3 +5 secondes
+Filter,C3,+,00:00:05,C
+
+# Cycle d'images sur la phase partielle 2 de C3 +20s à C4
+Boucle,C3,+,00:00:20,+,00:52:00,5,8,100,1/125,0
+
+# Notes sur les paramètres:
+# - Ouverture: f-number (ex: 4 = f/4, 5.6 = f/5.6)                      -> verifier avec un gphoto2 --get-config=aperture que les valeurs sont compatibles avec votre boitier
+# - ISO: valeur ISO (ex: 1600, 800, 400)                                -> verifier avec un gphoto2 --get-config=iso que les valeurs sont compatibles avec votre boitier
+# - Vitesse: en secondes (ex: 1 = 1s, 1/125s) (30->0.3-1/4->1/4000)     -> verifier avec un gphoto2 --get-config=shutterspeed que les valeurs sont compatibles avec votre boitier
+# - MLU: délai Mirror Lock-Up en millisecondes (0 = désactivé)
