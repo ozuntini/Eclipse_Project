@@ -1,0 +1,9 @@
+{
+  "_comment": "Fichier de paramètres pour Solar_Eclipse_Photography / main.py",
+  "script_file": "$HOME/Eclipse_Project/Solar_Eclipse_Photography/config/config_eclipse.txt",
+  "test_mode": false,
+  "log_level": "INFO",
+  "strict_mode": true,
+  "log_file": "$HOME/Eclipse_Project/Solar_Eclipse_Photography/eclipse_oz.log",
+  "journal_file": "$HOME/Eclipse_Project/Solar_Eclipse_Photography/eclipse_journal.jsonl"
+}
