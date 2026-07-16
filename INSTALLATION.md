@@ -52,17 +52,31 @@ sudo apt install git
 
 ```bash
 git clone https://github.com/ozuntini/Eclipse_Project.git
-````
+```
 
 ### Lancer l'installation
+
 ```bash
-cd Eclipse_Project/
-./install.sh
+./Eclipse_Project/install.sh
 ```
 Laisser l'installation progresser.
 
 Une fois l'installation terminée vous devez obtenir les messages suivants.  
 ![Fin_install](images/Fin_install.sh.png)
+
+## Activer le service MonHubEclipse
+
+### Lancer l'installation
+
+```bash
+./MonHubEclipse/install-systemd-service.sh
+```
+Laisser l'installation progresser.
+
+
+Une fois l'installation terminée vous devez obtenir les messages suivants.  
+![Fin_install](images/Fin_install_hub.png)
+
 
 ## Première utilisation
 

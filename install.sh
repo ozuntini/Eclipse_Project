@@ -14,10 +14,10 @@ sudo apt update && sudo apt upgrade -y
 echo "Installing system dependencies..."
 sudo apt install -y python3-pip python3-venv git
 sudo apt install -y gphoto2 libgphoto2-dev libgphoto2-port12t64
-sudo apt install -y build-essential pkg-config tmux
+sudo apt install -y build-essential pkg-config tmux jq
 
 # Clone project repository
-if [ `pwd` = "$HOME/Eclipse_Project" ]; then 
+if [ `pwd` = "$HOME" ]; then 
     echo "Cloning Eclipse Projects repository..."
     git clone https://github.com/ozuntini/Solar_Eclipse_Photography.git
     git clone https://github.com/ozuntini/Filter_Control.git
@@ -27,13 +27,17 @@ else
     exit 1
 fi
 
-# Create directory for logs
+# Read directory for logs in sep_params.json and create it if it doesn't exist
 echo "Creating logs directory..."
-mkdir -p ~/Eclipse_Project/logs
+LOG_DIR=$(jq -r '.log_dir' ~/Eclipse_Project/sep_params.json)
+mkdir -p "$LOG_DIR"
+echo "✅ logs directory created at: $LOG_DIR"
 
-# Create directory for captures
+# Read directory for captures in sep_params.json and create it if it doesn't exist
 echo "Creating captures directory..."
-mkdir -p ~/Eclipse_Project/captures
+CAPTURE_DIR=$(jq -r '.capture_dir' ~/Eclipse_Project/sep_params.json)
+mkdir -p "$CAPTURE_DIR"
+echo "✅ captures directory created at: $CAPTURE_DIR"
 
 # Create virtual environment
 echo "Creating Python virtual environment..."
@@ -46,7 +50,7 @@ source ~/eclipse_env/bin/activate
 # Install Python dependencies
 echo "Installing Python packages..."
 pip install --upgrade pip
-pip install -r ./Solar_Eclipse_Photography/requirements.txt
+pip install -r ~/Solar_Eclipse_Photography/requirements.txt
 
 # USB configuration for multi-cameras
 echo "Configuring USB rules for Canon cameras..."

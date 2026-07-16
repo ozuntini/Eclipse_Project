@@ -1,9 +1,15 @@
 {
   "_comment": "Fichier de paramètres pour Solar_Eclipse_Photography / main.py",
-  "script_file": "$HOME/Eclipse_Project/Solar_Eclipse_Photography/config/config_eclipse.txt",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "main_dir": "$HOME/Solar_Eclipse_Photography",
+  "script_file": "$HOME/Eclipse_Project/Eclipses/Spain2026/Scripts/Burgos6D-12_08_2026.txt",
   "test_mode": false,
   "log_level": "INFO",
   "strict_mode": true,
-  "log_file": "$HOME/Eclipse_Project/Solar_Eclipse_Photography/eclipse_oz.log",
-  "journal_file": "$HOME/Eclipse_Project/Solar_Eclipse_Photography/eclipse_journal.jsonl"
+  "log_dir": "$HOME/Eclipse_Project/logs",
+  "log_file": "eclipse_oz.log",
+  "journal_dir": "$HOME/Eclipse_Project/logs",
+  "journal_file": "eclipse_journal.jsonl",
+  "capture_dir": "$HOME/Eclipse_Project/Eclipses/Spain2026/Captures",
+  "capture_file": "Burgos6D-12_08_2026"
 }

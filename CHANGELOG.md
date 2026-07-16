@@ -6,7 +6,29 @@ Le format est basé sur [Keep a Changelog](https://keepachangelog.com/),
 et ce projet adhère à [Semantic Versioning](https://semver.org/).
 
 ---
+## [Version 1.1.0] - 2026-07-16
+### Ajouté (Added)
+- Ajout du chargement du paquet jq à l'installation
 
+### Modifié (Changed)
+- Organisation de l'arborescence
+- Install.sh modifié pour prise en compte du fichier sep_params.json
+- Modification de la documentation pour la prise en compte de la nouvelle arborescence
+
+
+### Corrigé (Fixed)
+-
+
+### Supprimé (Removed)
+-
+
+### Déprécié (Deprecated)
+-
+
+### Sécurité (Security)
+-
+
+---
 ## [Version 1.0.0] - 2026-05-16
 ### Ajouté (Added)
 - Versioning de l'application
