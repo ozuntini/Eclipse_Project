@@ -6,7 +6,7 @@ Le format est basé sur [Keep a Changelog](https://keepachangelog.com/),
 et ce projet adhère à [Semantic Versioning](https://semver.org/).
 
 ---
-## [Version 1.1.0] - 2026-07-16
+## [Version 1.1.0] - 2026-07-25
 ### Ajouté (Added)
 - Ajout du chargement du paquet jq à l'installation
 
@@ -17,7 +17,7 @@ et ce projet adhère à [Semantic Versioning](https://semver.org/).
 
 
 ### Corrigé (Fixed)
--
+- Modification des scripts [BurgosR6-12_08_2026.txt](/home/ozuntini/Eclipse_Project/Eclipses/Spain2026/Scripts/BurgosR6-12_08_2026.txt) et [Burgos-12_08_2026.txt](/home/ozuntini/Eclipse_Project/Eclipses/Spain2026/Scripts/Burgos-12_08_2026.txt) pour la gestion du f/d=0
 
 ### Supprimé (Removed)
 -
