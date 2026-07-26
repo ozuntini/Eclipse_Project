@@ -8,7 +8,7 @@ et ce projet adhère à [Semantic Versioning](https://semver.org/).
 ---
 ## [Version 1.1.0] - 2026-07-25
 ### Ajouté (Added)
-- Ajout du chargement du paquet jq à l'installation
+- Ajout du chargement du paquet jq et chrony à l'installation
 
 ### Modifié (Changed)
 - Organisation de l'arborescence

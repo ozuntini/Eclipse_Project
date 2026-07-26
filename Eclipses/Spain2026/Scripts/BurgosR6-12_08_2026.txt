@@ -12,7 +12,7 @@
 # C1 = Premier contact, C2 = Début totalité, Max = Maximum, C3 = Fin totalité, C4 = Dernier contact
 Config,19:33:29,20:28:37,20:29:30,20:30:23,21:22:02
 
-# Fermeture du filtre à C1 moins 4 minutes par sécurité
+# Fermeture du filtre à C1 moins 5 minutes par sécurité
 Filter,C1,-,00:05:00,C
 
 # Images avant le début de l'éclipse
