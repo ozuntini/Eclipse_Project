@@ -28,15 +28,17 @@ Boucle,C1,-,00:00:10,+,00:00:10,2,0,100,1/500,0
 Boucle,C1,+,00:00:30,+,00:54:30,30,0,100,1/500,0
 
 # ---- Phase Totale ---- Début
-# Ouverture du filtre à C2 moins 30 secondes
-Filter,C2,-,00:00:30,O
+# Ouverture du filtre à C2 moins 25 secondes (Durée 10s)
+Filter,C2,-,00:00:25,O
 
-# Anneaux de Diamant C2 -4s à 0s
+# Anneaux de Diamant C2 -10s à 0s
+Photo,C2,-,00:00:10,0,100,1/50,0
+Photo,C2,-,00:00:08,0,100,1/50,0
+Photo,C2,-,00:00:06,0,100,1/50,0
 Photo,C2,-,00:00:04,0,100,1/50,0
-Photo,C2,-,00:00:02,0,100,1/50,0
-Photo,C2,-,00:00:00,0,100,1/50,0
 
-# Grains de Baily C2 +2s à +4s
+# Grains de Baily C2 0 +2s à +4s
+Photo,C2,+,00:00:00,0,100,1/2500,0
 Photo,C2,+,00:00:02,0,100,1/2500,0
 Photo,C2,+,00:00:04,0,100,1/2500,0
 
@@ -67,9 +69,10 @@ Photo,Max,-,00:00:10,0,1600,1/50,0
 Photo,Max,-,00:00:08,0,1600,1/40,0
 Photo,Max,-,00:00:06,0,3200,1/20,0
 Photo,Max,-,00:00:04,0,3200,1/10,0
-Photo,Max,-,00:00:02,0,3200,1/5,0
-Photo,Max,+,00:00:00,0,3200,0.5,0
-Photo,Max,+,00:00:02,0,3200,1/5,0
+Photo,Max,-,00:00:02,0,3200,1/4,0
+#
+Photo,Max,+,00:00:00,0,3200,1,0
+#
 Photo,Max,+,00:00:04,0,3200,1/10,0
 Photo,Max,+,00:00:06,0,3200,1/20,0
 Photo,Max,+,00:00:08,0,1600,1/40,0
@@ -96,21 +99,23 @@ Photo,C3,-,00:00:10,0,100,1/400,0
 Photo,C3,-,00:00:08,0,100,1/500,0
 Photo,C3,-,00:00:06,0,100,1/640,0
 
-# Grains de Baily C3 -4s à -2s
+# Grains de Baily C3 -4s à -2s et 0s
 Photo,C3,-,00:00:04,0,100,1/2500,0
 Photo,C3,-,00:00:02,0,100,1/2500,0
+Photo,C3,-,00:00:00,0,100,1/2500,0
 
-# Anneaux de Diamant C3 +0s à +4s
-Photo,C3,+,00:00:00,0,100,1/50,0
+# Anneaux de Diamant C3 +2s à +8s
 Photo,C3,+,00:00:02,0,100,1/50,0
 Photo,C3,+,00:00:04,0,100,1/50,0
+Photo,C3,+,00:00:06,0,100,1/50,0
+Photo,C3,+,00:00:08,0,100,1/50,0
 
 # ---- Phase Totale ---- Fin
-# Fermeture du filtre à C3 +5 secondes
-Filter,C3,+,00:00:05,C
+# Fermeture du filtre à C3 +10 secondes
+Filter,C3,+,00:00:10,C
 
 # Cycle d'images sur la phase partielle 2 de C3 +20s à C4
-Boucle,C3,+,00:00:20,+,00:52:00,5,0,100,1/125,0
+Boucle,C3,+,00:00:25,+,00:52:00,30,0,100,1/125,0
 
 # Notes sur les paramètres:
 # - Ouverture: f-number (ex: 4 = f/4, 5.6 = f/5.6)                      -> verifier avec un gphoto2 --get-config=aperture que les valeurs sont compatibles avec votre boitier
